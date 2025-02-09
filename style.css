@@ -1,0 +1,146 @@
+nav {
+    border: solid 3px #d000ff; /* Example border color */
+    background-image: url(images/backgrounds/header-bg.png); /* Example background color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between sections */
+    align-items: center; /* Vertically align items */
+}
+
+.logo {
+    /* Style your logo here */
+     margin-left: 20px; /* Add some left margin */
+}
+
+.nav-links {
+    display: flex;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    gap: 10px; /* Space between links */
+    margin: 0 auto; /* Center the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* Example link color */
+    padding: 5px 10px; /* Add some padding around links */
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #d000ff4a;
+    color: #ff00d9; /* Example link color */
+    padding: 5px 10px; /* Add some padding around links */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin-right: 20px; /* Add some right margin */
+}
+
+.social-icons a {
+    /* Style your icons here */
+    display: inline-block; /* Make icons behave like inline elements */
+}
+
+.social-icons img {
+    width: 50px; /* Example icon size */
+    height: 50px;
+}
+/* ---------------------------------style end ------------------------------- */
+/* ---------------------------------style start ------------------------------- */
+
+footer {
+    background-image: url(images/backgrounds/footer-bg.png); /* Example background color */
+    background-size: contain;
+    padding: 20px;
+}
+
+.top-footer {
+    background-color: #0033ff9b;
+    display: flex;
+    justify-content: space-between; /* Distribute space */
+    align-items: center; /* Vertical alignment */
+    padding: 10px 0; /* Add padding top and bottom */
+    border-bottom: 1px solid #ddd; /* Add a separator line */
+}
+
+.top-footer .left-text {
+     background-color: #0033ff9b;
+    color: #ffffff;
+    font-size: large;
+    margin-left: 20px;
+}
+
+.breadcrumb {
+    display: flex; /* Make it a horizontal list */
+    list-style: none;
+       padding: 0;
+    margin: 0 auto; /* Center the breadcrumb */
+}
+
+.breadcrumb li {
+    color: #ffffff;
+    margin: 0 5px; /* Add space between items */
+}
+
+.breadcrumb a {
+    color: #ffffff;
+    text-decoration: none;
+   
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: ">"; /* The separator character */
+    margin: 0 5px; /* Adjust spacing around the separator */
+    color: #ffffff; /* Separator color (optional) */
+}
+
+.middle-footer {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-logo-description {
+    text-align: left; /* Align text to the left */
+}
+
+.footer-logo-description img {
+    max-width: 150px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    color: white;
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Align links to the right */
+}
+
+.footer-links li {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.bottom-footer {
+    background-color: #0033ff9b;
+    color: #ffffff;
+    font-size: larger;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+}
+/* ---------------------------------style end ------------------------------- */
+/* ---------------------------------style start ------------------------------- */
