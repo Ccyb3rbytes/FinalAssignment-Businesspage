@@ -1,10 +1,15 @@
+/* ----------------------------------CSS Notes--------------------------------------------------- */
+/* CSS Style Rule syntax */
 
-body{
-    width: 100%;
-    height: fit-content;
-}
+/*  
+                   Element {    <----Opening Bracket - 
+                      property:Value; (statement)
+                      property:Value; 
+                      property:Value; 
+        }
+*/
 
-/* ---------------------------------style----------------------------------- */
+/* ----------------------CSS Styles Start --------------------------------------------------- */
 nav {
     border: solid 3px #d000ff; /* Example border color */
     background-image: url(images/backgrounds/header-bg.png); /* Example background color */

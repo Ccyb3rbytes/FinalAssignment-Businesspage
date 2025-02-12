@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Repair Quote Request</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .name-row {
+            display: flex; /* Arrange name fields side by side */
+            gap: 20px; /* Add some spacing between fields */
+        }
+        .phone-info-row {
+            display: flex; /* Arrange phone info fields side by side */
+            gap: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .description {
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>What kind of repair do you need?</h2>
+
+    <form action="submit_quote.php" method="get">
+        <div class="name-row">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        <br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <div class="phone-info-row">
+            <div>
+                <label for="imei">IMEI (Optional):</label>
+                <input type="text" id="imei" name="imei">
+            </div>
+            <div>
+                <label for="serialNumber">Serial Number (Optional):</label>
+                <input type="text" id="serialNumber" name="serialNumber">
+            </div>
+        </div>
+        <br>
+
+        <div class="phone-info-row">
+            <div>
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" required>
+            </div>
+            <div>
+                <label for="make">Make:</label>
+                <input type="text" id="make" name="make" required>
+            </div>
+            <div>
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+            </div>
+            <div>
+                <label for="modelNumber">Model #:</label>
+                <input type="text" id="modelNumber" name="modelNumber" required>
+            </div>
+        </div>
+        <br>
+
+        <input type="button" onclick="alert('Are there any Cracks or chips in your screen? Is your screen displaying lines or black spots, or is the touchscreen unresponsive in places?  Or while typing certain letters?')" value="i"> 
+        <input type="checkbox"> <label for="checkbox">Screen repair</label>
+
+        <div>
+            <input type="checkbox" id="screenRepair" name="repairs[]" value="screenRepair">
+            <label for="screenRepair">Screen Repair</label>
+            <div class="description">Cracked or shattered screen, display issues, touchscreen problems.</div>
+        </div>
+
+        <div>
+           <input type="checkbox" id="batteryReplacement" name="repairs[]" value="batteryReplacement">
+            <label for="batteryReplacement">Battery Replacement</label>
+            <div class="description">Battery not holding charge, draining quickly, or not charging at all.</div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="chargingPort" name="repairs[]" value="chargingPort">
+            <label for="chargingPort">New Charging Port</label>
+            <div class="description">Phone not charging, intermittent charging, loose charging port.</div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="frontSpeaker" name="repairs[]" value="frontSpeaker">
+            <label for="frontSpeaker">Front Speaker</label>
+            <div class="description">Can't hear during calls, static or muffled sound, no sound at all.</div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="backSpeaker" name="repairs[]" value="backSpeaker">
+            <label for="backSpeaker">Back Speaker</label>
+            <div class="description">Low volume, distorted sound, no sound at all from the loudspeaker.</div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="waterDamage" name="repairs[]" value="waterDamage">
+            <label for="waterDamage">Water Damage</label>
+            <div class="description">Phone exposed to liquid, corrosion, or functional issues after exposure.</div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="googleLock" name="repairs[]" value="googleLock">
+            <label for="googleLock">Google Lock</label>
+            <div class="description">Locked after factory reset, requires previous Google account credentials.</div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="other" name="repairs[]" value="other">
+            <label for="other">I don't know / Other</label>
+            <div class="description">Describe the issue in the details section below.</div>
+        </div>
+
+        <label for="details">Additional Details:</label><br>
+        <textarea id="details" name="details" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Quote Request">
+    </form>
+
+</body>
+</html>
