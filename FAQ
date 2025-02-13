@@ -9,42 +9,32 @@
 </head>
 
 <body>
-<!-- -------------------------------nav style start ----------------------  -->
-<header>
+   <!-- -------------------------------nav style start ----------------------  -->
+    <header>
     <nav>
         <div class="logo">
             <img src="images/icons/media/logo.png" alt="Logo" style="width: 50px; height: 50px;">
-        </div>
+            </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <div class="sub-nav-links">
-                <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>>
-                  <a href="get-a-repair-quote.html">Get a Quote</a>
-                  <a href="mail-in-request.html">Mail-in Repair</a>
-                  <a href="about-us.html">About Us</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://facebook.com/cyb3rbytes" target="_blank"><img src="images/icons/media/fb.png"
-                        alt="Facebook"></a>
-                <a href="https://instagram.com/cyb3rbytes" target="_blank"><img src="images/icons/media/ig.png"
-                        alt="Instagram"></a>
-                <a href="https://tiktok.com/@cyb3rbytes" target="_blank"><img src="images/icons/media/tt.png"
-                        alt="TikTok"></a>
-                <a href="https://pinterest.com/cyb3rbytes" target="_blank"><img src="images/icons/media/2.png"
-                        alt="Pinterest"></a>
-            </div>
+            <a href="get-a-repair-quote.html">Get a Quote</a>
+            <a href="mail-in-request.html">Mail-in Repair</a>
+            <a href="about-us.html">About Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com/cyb3rbytes" target="_blank" rel=”noreferrer”></a>><img src="images/icons/media/fb.png" alt="Facebook"></a>
+            <a href="https://instagram.com/cyb3rbytes" target="_blank" rel=”noreferrer”><img src="images/icons/media/ig.png" alt="Instagram"></a>
+            <a href="https://tiktok.com/@cyb3rbytes" target="_blank" rel=”noreferrer”><img src="images/icons/media/tt.png" alt="TikTok"></a>
+            <a href="https://pinterest.com/cyb3rbytes" target="_blank" rel=”noreferrer”><img src="images/icons/media/2.png" alt="Pinterest"></a>
         </div>
     </nav>
 </header>
    <!-- ------------------------------- style start ----------------------  -->
  
    <main class="space" style="width:1920px; height: 1820px;">
-
     <details>
-        <summary>Headline that will be shown and clicked on</summary>
-          <p>Content that will be hidden</p>
-          <a href="example.com">Link that will be hidden</a>
-      </details>
+        
+    </details>
    </main>
 
    <!-- -------------------------------footer start ----------------------  -->
