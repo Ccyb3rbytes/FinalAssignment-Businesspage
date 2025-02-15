@@ -1,71 +1,130 @@
+<!-- The first line tells the browser how to render the content-->
 <!DOCTYPE html>
+<!--Tells the browser the language of the content -->
 <html lang="en">
+<!-- Information about the pages data -->
 
 <head>
+    <!--Shows the character set the page uses   -->
     <meta charset="UTF-8">
+    <!--Makes the webpage responsive to mobile and web browsers controles scaling   -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Defines the documents title. it shows in the pages tab -->
     <title>Homepage</title>
+    <!-- links the page to its stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- The body holds the websites content everything you want people to see will be placed here -->
+
 <body>
-   <!-- -------------------------------nav style start ----------------------  -->
-    <nav>
-        <div class="logo">
-            <img src="images/icons/media/logo.png" alt="Logo" style="width: 50px; height: 50px;">
+    <!-- -------------------------------nav style start ----------------------  -->
+    <!--holds the title logo and navbar of the website  -->
+    <header>
+        <!-- page section that holds the navigation links for the document  -->
+        <nav>
+            <!-- this div holds the logo and its height and width  -->
+            <div class="logo">
+                <img src="images/icons/media/logo.png" alt="Logo" style="width: 50px; height: 50px;">
             </div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Get a Quote</a>
-            <a href="#">Mail-in Repair</a>
-            <a href="#">About Us</a>
-        </div>
-        <div class="social-icons">
-            <a href="https://facebook.com/cyb3rbytes" target="_blank"><img src="images/icons/media/fb.png" alt="Facebook"></a>
-            <a href="https://instagram.com/cyb3rbytes" target="_blank"><img src="images/icons/media/ig.png" alt="Instagram"></a>
-            <a href="https://tiktok.com/@cyb3rbytes" target="_blank"><img src="images/icons/media/tt.png" alt="TikTok"></a>
-            <a href="https://pinterest.com/cyb3rbytes" target="_blank"><img src="images/icons/media/2.png" alt="Pinterest"></a>
-        </div>
-    </nav>
-   <!-- ------------------------------- style start ----------------------  -->
- 
+            <!-- This div holds the social links and keeps them to the right  -->
+            <div class="nav-links">
+                <!-- This  links to the home page -->
+                <a href="index.html">Home</a>
+                <!-- link to my businesses hours of operation -->
+                <a href="avalability.html">Availability</a>
+                <!-- link for customers to request a repair quote  -->
+                <a href="Quote.html">Get a Quote</a>
+                <div class="social-icons">
+                    <!-- links to business facebook -->
+                    <a href="https://facebook.com/cyb3rbytes" target="_blank"><img src="images/icons/media/fb.png"
+                            alt="Facebook"></a>
+                    <!-- links to business instagram  -->
+                    <a href="https://instagram.com/cyb3rbytes" target="_blank"><img src="images/icons/media/ig.png"
+                            alt="Instagram"></a>
+                    <!--links to business tiktok -->
+                    <a href="https://tiktok.com/@cyb3rbytes" target="_blank"><img src="images/icons/media/tt.png"
+                            alt="TikTok"></a>
+                    <!-- links to business tiktok  -->
+                    <a href="https://pinterest.com/cyb3rbytes" target="_blank"><img src="images/icons/media/2.png"
+                            alt="Pinterest"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ------------------------------- style start ----------------------  -->
+    <!-- his main class serves as the container for the content T -->
+    <main class="space" style="width:1920px; height: 1820px;">
 
 
-   <!-- -------------------------------footer style start ----------------------  -->
+        <!-- this is where i'll place my articles and sections -->
 
+
+
+
+    </main>
+
+
+    <!-- -------------------------------footer start ----------------------  -->
+    <!-- this is the footer for the website I placed a breadcrumb at the top of it  -->
     <footer>
+        <!-- this is the container for the top part of my footer -->
         <div class="top-footer">
+            <!-- a text prompt to sort of announce the breadcrumb -->
             <div class="left-text">Are you lost?</div>
+            <!-- this is the breadcrumb navigation trail-->
             <ul class="breadcrumb">
+                <!-- links the homepage -->
                 <li><a href="#">Home</a></li>
+                <!-- links the products page -->
                 <li><a href="#">Products</a></li>
+                <!-- links the catagory page -->
                 <li><a href="#">Category</a></li>
+                <!-- shows the current page without a link -->
                 <li>Current Page</li>
             </ul>
+            <!-- This is the container for the social media icons/links -->
             <div class="social-icons">
-                <a href="https://facebook.com/cyb3rbytes" target="_blank"><img src="images/icons/media/fb.png" alt="Facebook"></a>
-                <a href="https://instagram.com/cyb3rbytes" target="_blank"><img src="images/icons/media/ig.png" alt="Instagram"></a>
-                <a href="https://tiktok.com/@cyb3rbytes" target="_blank"><img src="images/icons/media/tt.png" alt="TikTok"></a>
-                <a href="https://pinterest.com/cyb3rbytes" target="_blank"><img src="images/icons/media/2.png" alt="Pinterest"></a>
+                <!-- links my business facebook -->
+                <a href="https://facebook.com/cyb3rbytes" target="_blank"><img src="images/icons/media/fb.png"
+                        alt="Facebook"></a>
+                <!-- links my business instagram -->
+                <a href="https://instagram.com/cyb3rbytes" target="_blank"><img src="images/icons/media/ig.png"
+                        alt="Instagram"></a>
+                <!-- links my busines tiktok  -->
+                <a href="https://tiktok.com/@cyb3rbytes" target="_blank"><img src="images/icons/media/tt.png"
+                        alt="TikTok"></a>
+                <!-- links my buisness pinterest -->
+                <a href="https://pinterest.com/cyb3rbytes" target="_blank"><img src="images/icons/media/2.png"
+                        alt="Pinterest"></a>
             </div>
         </div>
-
+        <!-- This is the middle container for my footer -->
         <div class="middle-footer">
+            <!-- this container is for my logo and description and helps keep it to the left -->
             <div class="footer-logo-description">
-                <img src="images/icons/media/logo.png" alt="Logo" style="width: 50px; height: 50px;"> <p>Your description here</p>
+                <!-- this points to my logo and where it can be found -->
+                <img src="images/icons/media/logo.png" alt="Logo" style="width: 50px; height: 50px;">
+                <p>Your description here</p>
             </div>
+            <!-- this is the links to my business policies -->
             <ul class="footer-links">
+                <!-- links to terms and conditions -->
                 <li><a href="#">Terms & Conditions</a></li>
+                <!-- links to privacy policy -->
                 <li><a href="#">Privacy Policy</a></li>
+                <!-- links to shipping policy -->
                 <li><a href="#">Shipping Policy</a></li>
+                <!-- links to return policy  -->
                 <li><a href="#">Return Policy</a></li>
             </ul>
         </div>
-
+        <!-- This is the last container for my footer it contains the copywrite dates -->
         <div class="bottom-footer">
             &copy; 2020 - 2025 C0dejunky. All rights reserved.
         </div>
     </footer>
+    <!-- -------------------------------footer end ----------------------  -->
 
 
 </body>
