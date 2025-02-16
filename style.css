@@ -1,157 +1,198 @@
-/* ----------------------------------CSS Notes--------------------------------------------------- */
-/* CSS Style Rule syntax */
-
-/*  
-                   Element {    <----Opening Bracket - 
-                      property:Value; (statement)
-                      property:Value; 
-                      property:Value; 
-        }
-/* ----------------------general styles start-----------------------*/ 
-body{
+body {
+    /* Sets the background color of the page */
     background-color: #ffffff;
-       }
+}
 
 /* ----------------------general styles end-----------------------*/
-
 /* ----------------------Navbar CSS Styles Start --------------------------------------------------- */
+
 nav {
-    border: solid 3px #d000ff; /* Example border color */
-    background-image: url(images/backgrounds/header-bg.png); /* Example background color */
+    /* Sets the border style, width, and color in one declaration */
+    border: solid 3px #d000ff;
+    /* Uses an image as the background */
+    background-image: url(images/backgrounds/header-bg.png);
+    /* Adds space between content and border */
     padding: 10px;
+    /* Enables flexbox for alignment and layout */
     display: flex;
-    justify-content: space-between; /* Distribute space between sections */
-    align-items: center; /* Vertically align items */
+    /* Distributes space evenly between sections */
+    justify-content: space-between;
+    /* Aligns items vertically */
+    align-items: center;
 }
 
 .logo {
-    /* Style your logo here */
-     margin-left: 20px; /* Add some left margin */
+    /* Adds left margin to keep the logo positioned correctly */
+    margin-left: 20px;
 }
 
 .nav-links {
+    /* Uses flexbox for horizontal and vertical alignment */
     display: flex;
+    /* Distributes space evenly between links */
+    justify-content: center;
+    /* Sets font style */
     font-family: sans-serif;
     font-size: large;
     font-weight: bold;
-    gap: 10px; /* Space between links */
-    margin: 0 auto; /* Center the links */
+    /* Adds spacing between links */
+    gap: 10px;
 }
 
 .nav-links a {
+    /* Removes underline from links */
     text-decoration: none;
-    color: #ffffff; /* Example link color */
-    padding: 5px 10px; /* Add some padding around links */
+    /* Sets link color */
+    color: #ffffff;
+    /* Adds padding to the top and bottom*/
+    padding: 5px 10px;
 }
 
 .nav-links a:hover {
+    /* Removes underline on hover */
     text-decoration: none;
-    display: inline-block;
+    /* Uses flexbox for layout (redundant here but included for consistency) */
+    display: flex;
+    /* Changes background color on hover */
     background-color: #d000ff4a;
-    color: #ff00d9; /* Example link color */
-    padding: 5px 10px; /* Add some padding around links */
+    /* Changes text color on hover */
+    color: #ffc800;
+    /* Maintains padding */
+    padding: 5px 10px;
 }
 
 .social-icons {
+    /* Uses flexbox for layout */
     display: flex;
-    gap: 10px; /* Space between icons */
-    margin-right: 20px; /* Add some right margin */
+    /* Adds spacing between icons */
+    gap: 10px;
+    /* Adds right margin */
+    margin-right: 20px;
 }
 
 .social-icons a {
-    /* Style your icons here */
-    display: inline-block; /* Make icons behave like inline elements */
+    /* Makes icons behave like inline elements */
+    display: inline-block;
 }
 
 .social-icons img {
-    width: 50px; /* Example icon size */
+    /* Sets icon dimensions */
+    width: 50px;
     height: 50px;
 }
-/* ---------------------------------Navbar style end ------------------------------- */
-/* ---------------------------------footer style start ------------------------------- */
 
+/* ---------------------------------footer style start ------------------------------- */
 footer {
-    background-image: url(images/backgrounds/footer-bg.png); /* Example background color */
+    /* Sets background image */
+    background-image: url(images/backgrounds/footer-bg.png);
     background-size: contain;
     padding: 20px;
 }
 
 .top-footer {
+    /* Sets background color of top footer */
     background-color: #0033ff9b;
+    /* Enables flexbox for layout */
     display: flex;
-    justify-content: space-between; /* Distribute space */
-    align-items: center; /* Vertical alignment */
-    padding: 10px 0; /* Add padding top and bottom */
-    border-bottom: 1px solid #ddd; /* Add a separator line */
+    /* Distributes space evenly */
+    justify-content: space-between;
+    /* Aligns items vertically */
+    align-items: center;
+    /* Adds padding */
+    padding: 10px 0;
+    /* Adds separator line */
+    border-bottom: 1px solid #ddd;
 }
 
 .top-footer .left-text {
-     background-color: #0033ff9b;
+    /* Sets background color and text styling */
+    background-color: #0033ff9b;
     color: #ffffff;
     font-size: large;
+    /* adds 20px to the left margin keeping the content to the right */
     margin-left: 20px;
-}
+   }
 
 .breadcrumb {
-    display: flex; /* Make it a horizontal list */
+    /* Uses flexbox for layout */
+    display: flex;
+    /* Removes default list styles */
     list-style: none;
-       padding: 0;
-    margin: 0 auto; /* Center the breadcrumb */
+    /* Centers breadcrumb */
+    margin: 0 auto;
 }
 
 .breadcrumb li {
+    /* Sets text color and adds spacing */
     color: #ffffff;
-    margin: 0 5px; /* Add space between items */
+    margin: 0 5px;
 }
 
 .breadcrumb a {
+    /* Sets link color and removes underline */
     color: #ffffff;
     text-decoration: none;
-   
 }
 
+/* applies styles to the ::after pseudo-element of the list elements inside the breadcrumb list making it so the last item (current page) isnt included */
 .breadcrumb li:not(:last-child)::after {
-    content: ">"; /* The separator character */
-    margin: 0 5px; /* Adjust spacing around the separator */
-    color: #ffffff; /* Separator color (optional) */
+    /* Adds a > between each link*/
+    content: ">";
+    /* adds space */
+    margin: 0 5px;
+    color: #ffffff;
 }
 
 .middle-footer {
+    /* sets the font color */
     color: #ffffff;
+    /* makes the container a flex container */
     display: flex;
+    /* combined with flex allows for even distribution of space */
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    /* aligns the items to the top of the flex container */
+    align-items: flex-start;
+    /* adds padding to the top */
     padding: 20px 0;
+    /* creates a divider */
     border-bottom: 1px solid #ddd;
 }
 
 .footer-logo-description {
-    text-align: left; /* Align text to the left */
+    /* Aligns text to the left */
+    text-align: left;
 }
 
 .footer-logo-description img {
-    max-width: 150px; /* Adjust as needed */
+    /* Sets max width for images */
+    max-width: 150px;
     margin-bottom: 10px;
 }
 
 .footer-links {
+    /* Sets text styling for footer links */
     color: white;
+    /* removes default styles */
     list-style: none;
+    /* centers the links */
     padding: 0;
-    text-align: right; /* Align links to the right */
+    text-align: right;
 }
 
 .footer-links li {
+    /* Sets text color and spacing */
     color: #ffffff;
     margin-bottom: 5px;
 }
 
 .footer-links a {
+    /* Removes underline and sets color */
     text-decoration: none;
     color: #ffffff;
 }
 
 .bottom-footer {
+    /* Sets background color and text styling */
     background-color: #0033ff9b;
     color: #ffffff;
     font-size: larger;
@@ -159,48 +200,45 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-/* ---------------------------------footerstyle end ------------------------------- */
+
 /* ---------------------------------form style start ------------------------------- */
-form{
-   background-color: aliceblue;
-   width: 600px;
-   padding: 5%;
-   margin: auto;
-   }
-
-input[type=text]{
-    border-bottom: black;
-    width: 100%;
-    height: 30px;
-    background-color: rgb(247, 247, 247);
-    box-shadow: inset rgb(219, 219, 219);
-    box-shadow: #bebebe 5px
+form {
+    /* Sets background color to a light blue */
+    background-color: aliceblue;
+    /* makes the width a certain size */
+    width: 600px;
+    /* adds space between the content and the border inside the form  */
+    padding: 5%;
+    /* centers the form horizontally */
+    margin: auto;
 }
 
+/* sets the styles of the text inputs where people put their information */
+input[type=text] {
+    /* makes the input field take up the full width of the form */
+    width: 100%;
+    /* sets the height of the input  */
+    height: 30px;
+    /* sets the background color of the input feild to white */
+    background-color: rgb(247, 247, 247);
+    /* adds a shadow to the inside of the box giving it a sense of depth */
+    box-shadow: inset 0px 0px 5px rgb(219, 219, 219);
+    border-bottom: solid rgb(173, 173, 173);
+    }
+
+/* sets the styles of the text inputs where people put their information */
 input[type=checkbox] {
-    border-bottom: black;
+    /* makes the input field take up the full width of the form */
     width: 100%;
-    height: 30px;
+    /* sets the height of the input  */
+    height: 20px;
+    /* sets the background color of the input feild to white */
     background-color: rgb(247, 247, 247);
-    box-shadow: inset rgb(219, 219, 219);
-    box-shadow: #bebebe 5px
-}
+    /* adds a shadow to the inside of the box giving it a sense of depth */
+    box-shadow: inset 0px 0px 5px rgb(219, 219,
 
-input[type=checkbox] :active {
-    border-bottom: black;
-    width: 100%;
-    height: 30px;
-    color: rgb(255, 0, 242);
-    background-color: #93e0ff;
-       box-shadow: #bebebe 5px 5px 5px
-}
-
-label{
+label {
+    /* sets the font and size for all the labels */
     font-family: sans-serif;
     font-size: large;
 }
-
-/* colors */
-
-
-
